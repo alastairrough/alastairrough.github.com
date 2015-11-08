@@ -3,7 +3,6 @@
 <head>
     <meta charset="utf-8" />
     <title>Animal Noises</title>
-    <h1>Animal Noises</h1>
 </head>
 <body>
     <div class="thumbnail" id="animalnoises">
@@ -18,7 +17,6 @@
         $(function () {
             $(".playback").click(function (e) {
                 e.preventDefault();
-
                 // This next line will get the audio element
                 // that is adjacent to the link that was clicked.
                 var song = $(this).next('audio').get(0);
@@ -30,13 +28,11 @@
         });
     </script>
     <script type="text/javascript">
-								window.addEvent('load', function(){
-
-                      loadResult();
-
-								});
+        window.addEvent('load', function () {
+            loadResult();
+        });
     </script>
-    <p>Cow</p>
+<!--    <p>Cow</p>
 
     <audio controls>
         <source src="http://aroughazure3.azurewebsites.net/content/103425__confusion-music__bull-3-b.mp3"
@@ -44,7 +40,7 @@
         <img src="http://aroughazure3.azurewebsites.net/content/cow.jpg" width="300">
     </audio>
     <br />
-    <!--<img src="http://aroughazure3.azurewebsites.net/content/cow.jpg" width="300" />-->
+    <img src="http://aroughazure3.azurewebsites.net/content/cow.jpg" width="300" />
     <p>Rooster</p>
     <audio controls>
         <source src="http://aroughazure3.azurewebsites.net/content/43382__agfx__rooster-chicken-calls-2.mp3"
@@ -94,6 +90,6 @@
     <br />
     <img src="http://aroughazure3.azurewebsites.net/content/Lion.jpg" width="300" />
 
-
+    -->
 </body>
 </html>
