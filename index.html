@@ -2,11 +2,14 @@
 <html>
 <head>
     <head>
-        <script src="jquery-1.11.3.min.js"></script>
+       <!--<script src="jquery.js">--> 
+       <!-- <script src="jquery-1.11.3.min.js"></script>-->
         <meta charset="utf-8" />
         <title>Animal Noises</title>
     </head>
     <body>
+
+
         <div class="thumbnail" id="animalnoises">
             <a class="playback" href="#">
                 <img id="play" src="http://aroughazure3.azurewebsites.net/content/cow.jpg" />
@@ -15,7 +18,7 @@
                 <source src="http://aroughazure3.azurewebsites.net/content/103425__confusion-music__bull-3-b.mp3" type='audio/mp3'>
             </audio>
         </div>
-        <script type="text/javascript">
+        <script src="jquery-2.1.4.min.js">
             $(function () {
                 $(".playback").click(function (e) {
                     e.preventDefault();
