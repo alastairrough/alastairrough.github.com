@@ -4,630 +4,718 @@
     <meta charset="utf-8" />
     <title>Animal Noises</title>
     <script src="http://code.jquery.com/jquery-2.1.3.js" type="text/javascript"></script>
+    <style type="text/css">
+        #container {
+            width: 800px;
+        }
+
+        #content {
+            margin-left: 200px;
+            font:;
+        }
+
+        #navbar {
+            float: left;
+            width: 200px;
+            font-family: Calibri;
+            font-size: 36px;
+            text-align: right;
+            padding-right: 30px;
+        }
+    </style>
 </head>
 <body>
+    <div id="layout">
+        <!--frog-->
+        <div id="navbar">frog</div>
+        <div id="content">
+            <div class="thumbnail" id="animalnoises">
+                <a class="playback" href="#">
+                    <img id="play" src="http://aroughazure3.azurewebsites.net/content/bullfrog.jpg" width="300" />
+                </a>
+                <audio id="animalnoises">
+                    <source src="http://aroughazure3.azurewebsites.net/content/bullfrog.mp3" type='audio/mp3'>
+                </audio>
+            </div>
+            <script type="text/javascript">
+                $(function () {
+                    $(".playback").click(function (e) {
+                        e.preventDefault();
+                        // This next line will get the audio element
+                        // that is adjacent to the link that was clicked.
+                        var song = $(this).next('audio').get(0);
+                        if (song.paused)
+                            song.play();
+                        else
+                            song.pause();
+                    });
+                });
+            </script>
+            <script type="text/javascript">
+                window.addEvent('load', function () {
+                    loadResult();
+                });
+            </script>
+        </div>
 
-    <!--frog-->
-    <div class="thumbnail" id="animalnoises">
-        <a class="playback" href="#">
-            <img id="play" src="http://aroughazure3.azurewebsites.net/content/bullfrog.jpg" width="300" />
-        </a>
-        <audio id="animalnoises">
-            <source src="http://aroughazure3.azurewebsites.net/content/bullfrog.mp3" type='audio/mp3'>
-        </audio>
-    </div>
-    <script type="text/javascript">
-        $(function () {
-            $(".playback").click(function (e) {
-                e.preventDefault();
-                // This next line will get the audio element
-                // that is adjacent to the link that was clicked.
-                var song = $(this).next('audio').get(0);
-                if (song.paused)
-                    song.play();
-                else
-                    song.pause();
+        <!--camel-->
+        <div id="navbar">camel</div>
+        <div id="content">
+            <div class="thumbnail" id="animalnoises">
+                <a class="playback" href="#">
+                    <img id="play" src="http://aroughazure3.azurewebsites.net/content/camel.jpg" width="300" />
+                </a>
+                <audio id="animalnoises">
+                    <source src="http://aroughazure3.azurewebsites.net/content/camel.mp3" type='audio/mp3'>
+                </audio>
+            </div>
+            <script type="text/javascript">
+            $(function () {
+                $(".playback").click(function (e) {
+                    e.preventDefault();
+                    // This next line will get the audio element
+                    // that is adjacent to the link that was clicked.
+                    var song = $(this).next('audio').get(1);
+                    if (song.paused)
+                        song.play();
+                    else
+                        song.pause();
+                });
             });
-        });
-    </script>
-    <script type="text/javascript">
-        window.addEvent('load', function () {
-            loadResult();
-        });
-    </script>
-    <!--camel-->
-    <div class="thumbnail" id="animalnoises">
-        <a class="playback" href="#">
-            <img id="play" src="http://aroughazure3.azurewebsites.net/content/camel.jpg" width="300" />
-        </a>
-        <audio id="animalnoises">
-            <source src="http://aroughazure3.azurewebsites.net/content/camel.mp3" type='audio/mp3'>
-        </audio>
-    </div>
-    <script type="text/javascript">
-        $(function () {
-            $(".playback").click(function (e) {
-                e.preventDefault();
-                // This next line will get the audio element
-                // that is adjacent to the link that was clicked.
-                var song = $(this).next('audio').get(1);
-                if (song.paused)
-                    song.play();
-                else
-                    song.pause();
+            </script>
+            <script type="text/javascript">
+            window.addEvent('load', function () {
+                loadResult();
             });
-        });
-    </script>
-    <script type="text/javascript">
-        window.addEvent('load', function () {
-            loadResult();
-        });
-    </script>
-    <!--cat-->
-    <div class="thumbnail" id="animalnoises">
-        <a class="playback" href="#">
-            <img id="play" src="http://aroughazure3.azurewebsites.net/content/cat.jpg" width="300" />
-        </a>
-        <audio id="animalnoises">
-            <source src="http://aroughazure3.azurewebsites.net/content/cat.mp3" type='audio/mp3'>
-        </audio>
-    </div>
-    <script type="text/javascript">
-        $(function () {
-            $(".playback").click(function (e) {
-                e.preventDefault();
-                // This next line will get the audio element
-                // that is adjacent to the link that was clicked.
-                var song = $(this).next('audio').get(2);
-                if (song.paused)
-                    song.play();
-                else
-                    song.pause();
-            });
-        });
-    </script>
-    <script type="text/javascript">
-        window.addEvent('load', function () {
-            loadResult();
-        });
-    </script>
-
-    <!--chickadee-->
-    <div class="thumbnail" id="animalnoises">
-        <a class="playback" href="#">
-            <img id="play" src="http://aroughazure3.azurewebsites.net/content/chickadee.jpg" width="300" />
-        </a>
-        <audio id="animalnoises">
-            <source src="http://aroughazure3.azurewebsites.net/content/chickadee.mp3" type='audio/mp3'>
-        </audio>
-    </div>
-    <script type="text/javascript">
-        $(function () {
-            $(".playback").click(function (e) {
-                e.preventDefault();
-                // This next line will get the audio element
-                // that is adjacent to the link that was clicked.
-                var song = $(this).next('audio').get(3);
-                if (song.paused)
-                    song.play();
-                else
-                    song.pause();
-            });
-        });
-    </script>
-    <script type="text/javascript">
-        window.addEvent('load', function () {
-            loadResult();
-        });
-    </script>
-
-    <!--crow-->
-    <div class="thumbnail" id="animalnoises">
-        <a class="playback" href="#">
-            <img id="play" src="http://aroughazure3.azurewebsites.net/content/crow.jpg" width="300" />
-        </a>
-        <audio id="animalnoises">
-            <source src="http://aroughazure3.azurewebsites.net/content/crow.mp3" type='audio/mp3'>
-        </audio>
-    </div>
-    <script type="text/javascript">
-        $(function () {
-            $(".playback").click(function (e) {
-                e.preventDefault();
-                // This next line will get the audio element
-                // that is adjacent to the link that was clicked.
-                var song = $(this).next('audio').get(4);
-                if (song.paused)
-                    song.play();
-                else
-                    song.pause();
-            });
-        });
-    </script>
-    <script type="text/javascript">
-        window.addEvent('load', function () {
-            loadResult();
-        });
-    </script>
-
-    <!--cuckoo-->
-    <div class="thumbnail" id="animalnoises">
-        <a class="playback" href="#">
-            <img id="play" src="http://aroughazure3.azurewebsites.net/content/cuckoo.jpg" width="300" />
-        </a>
-        <audio id="animalnoises">
-            <source src="http://aroughazure3.azurewebsites.net/content/cuckoo.mp3" type='audio/mp3'>
-        </audio>
-    </div>
-    <script type="text/javascript">
-        $(function () {
-            $(".playback").click(function (e) {
-                e.preventDefault();
-                // This next line will get the audio element
-                // that is adjacent to the link that was clicked.
-                var song = $(this).next('audio').get(5);
-                if (song.paused)
-                    song.play();
-                else
-                    song.pause();
-            });
-        });
-    </script>
-    <script type="text/javascript">
-        window.addEvent('load', function () {
-            loadResult();
-        });
-    </script>
-
-    <!--donkey-->
-    <div class="thumbnail" id="animalnoises">
-        <a class="playback" href="#">
-            <img id="play" src="http://aroughazure3.azurewebsites.net/content/donkey.jpg" width="300" />
-        </a>
-        <audio id="animalnoises">
-            <source src="http://aroughazure3.azurewebsites.net/content/donkey.mp3" type='audio/mp3'>
-        </audio>
-    </div>
-    <script type="text/javascript">
-        $(function () {
-            $(".playback").click(function (e) {
-                e.preventDefault();
-                // This next line will get the audio element
-                // that is adjacent to the link that was clicked.
-                var song = $(this).next('audio').get(6);
-                if (song.paused)
-                    song.play();
-                else
-                    song.pause();
-            });
-        });
-    </script>
-    <script type="text/javascript">
-        window.addEvent('load', function () {
-            loadResult();
-        });
-    </script>
-    <!--goat-->
-    <div class="thumbnail" id="animalnoises">
-        <a class="playback" href="#">
-            <img id="play" src="http://aroughazure3.azurewebsites.net/content/goat.jpg" width="300" />
-        </a>
-        <audio id="animalnoises">
-            <source src="http://aroughazure3.azurewebsites.net/content/goat.mp3" type='audio/mp3'>
-        </audio>
-    </div>
-    <script type="text/javascript">
-        $(function () {
-            $(".playback").click(function (e) {
-                e.preventDefault();
-                // This next line will get the audio element
-                // that is adjacent to the link that was clicked.
-                var song = $(this).next('audio').get(7);
-                if (song.paused)
-                    song.play();
-                else
-                    song.pause();
-            });
-        });
-    </script>
-    <script type="text/javascript">
-        window.addEvent('load', function () {
-            loadResult();
-        });
-    </script>
-
-    <!--panda-->
-    <div class="thumbnail" id="animalnoises">
-        <a class="playback" href="#">
-            <img id="play" src="http://aroughazure3.azurewebsites.net/content/panda.jpg" width="300" />
-        </a>
-        <audio id="animalnoises">
-            <source src="http://aroughazure3.azurewebsites.net/content/panda.mp3" type='audio/mp3'>
-        </audio>
-    </div>
-    <script type="text/javascript">
-        $(function () {
-            $(".playback").click(function (e) {
-                e.preventDefault();
-                // This next line will get the audio element
-                // that is adjacent to the link that was clicked.
-                var song = $(this).next('audio').get(8);
-                if (song.paused)
-                    song.play();
-                else
-                    song.pause();
-            });
-        });
-    </script>
-    <script type="text/javascript">
-        window.addEvent('load', function () {
-            loadResult();
-        });
-    </script>
-    <!--peacock-->
-    <div class="thumbnail" id="animalnoises">
-        <a class="playback" href="#">
-            <img id="play" src="http://aroughazure3.azurewebsites.net/content/peacock.jpg" width="300" />
-        </a>
-        <audio id="animalnoises">
-            <source src="http://aroughazure3.azurewebsites.net/content/peacock.mp3" type='audio/mp3'>
-        </audio>
-    </div>
-    <script type="text/javascript">
-        $(function () {
-            $(".playback").click(function (e) {
-                e.preventDefault();
-                // This next line will get the audio element
-                // that is adjacent to the link that was clicked.
-                var song = $(this).next('audio').get(9);
-                if (song.paused)
-                    song.play();
-                else
-                    song.pause();
-            });
-        });
-    </script>
-    <script type="text/javascript">
-        window.addEvent('load', function () {
-            loadResult();
-        });
-    </script>
-    <!--pig-->
-    <div class="thumbnail" id="animalnoises">
-        <a class="playback" href="#">
-            <img id="play" src="http://aroughazure3.azurewebsites.net/content/pig.jpg" width="300" />
-        </a>
-        <audio id="animalnoises">
-            <source src="http://aroughazure3.azurewebsites.net/content/pig.mp3" type='audio/mp3'>
-        </audio>
-    </div>
-    <script type="text/javascript">
-        $(function () {
-            $(".playback").click(function (e) {
-                e.preventDefault();
-                // This next line will get the audio element
-                // that is adjacent to the link that was clicked.
-                var song = $(this).next('audio').get(10);
-                if (song.paused)
-                    song.play();
-                else
-                    song.pause();
-            });
-        });
-    </script>
-    <script type="text/javascript">
-        window.addEvent('load', function () {
-            loadResult();
-        });
-    </script>
-    <!--puffin-->
-    <div class="thumbnail" id="animalnoises">
-        <a class="playback" href="#">
-            <img id="play" src="http://aroughazure3.azurewebsites.net/content/puffin.jpg" width="300" />
-        </a>
-        <audio id="animalnoises">
-            <source src="http://aroughazure3.azurewebsites.net/content/puffin.mp3" type='audio/mp3'>
-        </audio>
-    </div>
-    <script type="text/javascript">
-        $(function () {
-            $(".playback").click(function (e) {
-                e.preventDefault();
-                // This next line will get the audio element
-                // that is adjacent to the link that was clicked.
-                var song = $(this).next('audio').get(11);
-                if (song.paused)
-                    song.play();
-                else
-                    song.pause();
-            });
-        });
-    </script>
-    <script type="text/javascript">
-        window.addEvent('load', function () {
-            loadResult();
-        });
-    </script>
-    <!--rattlesnake-->
-    <div class="thumbnail" id="animalnoises">
-        <a class="playback" href="#">
-            <img id="play" src="http://aroughazure3.azurewebsites.net/content/rattlesnake.jpg" width="300" />
-        </a>
-        <audio id="animalnoises">
-            <source src="http://aroughazure3.azurewebsites.net/content/rattlesnake.mp3" type='audio/mp3'>
-        </audio>
-    </div>
-    <script type="text/javascript">
-        $(function () {
-            $(".playback").click(function (e) {
-                e.preventDefault();
-                // This next line will get the audio element
-                // that is adjacent to the link that was clicked.
-                var song = $(this).next('audio').get(12);
-                if (song.paused)
-                    song.play();
-                else
-                    song.pause();
-            });
-        });
-    </script>
-    <script type="text/javascript">
-        window.addEvent('load', function () {
-            loadResult();
-        });
-    </script>
-
-    <!--turkey-->
-    <div class="thumbnail" id="animalnoises">
-        <a class="playback" href="#">
-            <img id="play" src="http://aroughazure3.azurewebsites.net/content/turkey.jpg" width="300" />
-        </a>
-        <audio id="animalnoises">
-            <source src="http://aroughazure3.azurewebsites.net/content/turkey.mp3" type='audio/mp3'>
-        </audio>
-    </div>
-    <script type="text/javascript">
-        $(function () {
-            $(".playback").click(function (e) {
-                e.preventDefault();
-                // This next line will get the audio element
-                // that is adjacent to the link that was clicked.
-                var song = $(this).next('audio').get(13);
-                if (song.paused)
-                    song.play();
-                else
-                    song.pause();
-            });
-        });
-    </script>
-    <script type="text/javascript">
-        window.addEvent('load', function () {
-            loadResult();
-        });
-    </script>
-
-    <!--monkey -->
-    <div class="thumbnail" id="animalnoises">
-        <a class="playback" href="#">
-            <img id="play" src="http://aroughazure3.azurewebsites.net/content/monkey.jpg" width="300" />
-        </a>
-        <audio id="animalnoises">
-            <source src="http://aroughazure3.azurewebsites.net/content/77689__marcoo__monkeys-miami-zoomov06764-mpg.mp3" type='audio/mp3'>
-        </audio>
-    </div>
-    <script type="text/javascript">
-        $(function () {
-            $(".playback").click(function (e) {
-                e.preventDefault();
-                // This next line will get the audio element
-                // that is adjacent to the link that was clicked.
-                var song = $(this).next('audio').get(14);
-                if (song.paused)
-                    song.play();
-                else
-                    song.pause();
-            });
-        });
-    </script>
-    <script type="text/javascript">
-        window.addEvent('load', function () {
-            loadResult();
-        });
-    </script>
-
-    <!--cow -->
-    <div class="thumbnail" id="animalnoises">
-        <a class="playback" href="#">
-            <img id="play" src="http://aroughazure3.azurewebsites.net/content/cow.jpg" width="300" />
-        </a>
-        <audio id="animalnoises">
-            <source src="http://aroughazure3.azurewebsites.net/content/103425__confusion-music__bull-3-b.mp3" type='audio/mp3'>
-        </audio>
-    </div>
-    <script type="text/javascript">
-        $(function () {
-            $(".playback").click(function (e) {
-                e.preventDefault();
-                // This next line will get the audio element
-                // that is adjacent to the link that was clicked.
-                var song = $(this).next('audio').get(15);
-                if (song.paused)
-                    song.play();
-                else
-                    song.pause();
-            });
-        });
-    </script>
-    <script type="text/javascript">
-        window.addEvent('load', function () {
-            loadResult();
-        });
-    </script>
-
-    <!--rooster -->
-    <div class="thumbnail" id="animalnoises">
-        <a class="playback" href="#">
-            <img id="play" src="http://aroughazure3.azurewebsites.net/content/rooster.jpg" width="300" />
-        </a>
-        <audio id="animalnoises">
-            <source src="http://aroughazure3.azurewebsites.net/content/43382__agfx__rooster-chicken-calls-2.mp3" type='audio/mp3'>
-        </audio>
-    </div>
-    <script type="text/javascript">
-        $(function () {
-            $(".playback").click(function (e) {
-                e.preventDefault();
-                // This next line will get the audio element
-                // that is adjacent to the link that was clicked.
-                var song = $(this).next('audio').get(16);
-                if (song.paused)
-                    song.play();
-                else
-                    song.pause();
-            });
-        });
-    </script>
-    <script type="text/javascript">
-        window.addEvent('load', function () {
-            loadResult();
-        });
-    </script>
-
-    <!--duck -->
-    <div class="thumbnail" id="animalnoises2">
-        <a class="playback" href="#">
-            <img id="play" src="http://aroughazure3.azurewebsites.net/content/duck.jpg" width="300" />
-        </a>
-        <audio id="animalnoises">
-            <source src="http://aroughazure3.azurewebsites.net/content/duck.mp3" type='audio/mp3'>
-        </audio>
-    </div>
-    <script type="text/javascript">
-        $(function () {
-            $(".playback").click(function (e) {
-                e.preventDefault();
-                // This next line will get the audio element
-                // that is adjacent to the link that was clicked.
-                var song = $(this).next('audio').get(17);
-                if (song.paused)
-                    song.play();
-                else
-                    song.pause();
-            });
-        });
-    </script>
-    <script type="text/javascript">
-        window.addEvent('load', function () {
-            loadResult();
-        });
-    </script>
-
-    <!--bear -->
-    <div class="thumbnail" id="animalnoises2">
-        <a class="playback" href="#">
-            <img id="play" src="http://aroughazure3.azurewebsites.net/content/polarbear.jpg" width="300" />
-        </a>
-        <audio id="animalnoises">
-            <source src="http://aroughazure3.azurewebsites.net/content/70333__mrbubble110__bear-roar.mp3" type='audio/mp3'>
-        </audio>
-    </div>
-    <script type="text/javascript">
-        $(function () {
-            $(".playback").click(function (e) {
-                e.preventDefault();
-                // This next line will get the audio element
-                // that is adjacent to the link that was clicked.
-                var song = $(this).next('audio').get(18);
-                if (song.paused)
-                    song.play();
-                else
-                    song.pause();
-            });
-        });
-    </script>
-    <script type="text/javascript">
-        window.addEvent('load', function () {
-            loadResult();
-        });
-    </script>
-
-    <!--elephant -->
-    <div class="thumbnail" id="animalnoises2">
-        <a class="playback" href="#">
-            <img id="play" src="http://aroughazure3.azurewebsites.net/content/elephant.jpg" width="300" />
-        </a>
-        <audio id="animalnoises">
-            <source src="http://aroughazure3.azurewebsites.net/content/148873__vataaa__voice-elephant.mp3" type='audio/mp3'>
-        </audio>
-    </div>
-    <script type="text/javascript">
-        $(function () {
-            $(".playback").click(function (e) {
-                e.preventDefault();
-                // This next line will get the audio element
-                // that is adjacent to the link that was clicked.
-                var song = $(this).next('audio').get(19);
-                if (song.paused)
-                    song.play();
-                else
-                    song.pause();
-            });
-        });
-    </script>
-    <script type="text/javascript">
-        window.addEvent('load', function () {
-            loadResult();
-        });
-    </script>
-
-    <!--LION -->
-    <div class="thumbnail" id="animalnoises2">
-        <a class="playback" href="#">
-            <img id="play" src="http://aroughazure3.azurewebsites.net/content/Lion.jpg" width="300" />
-        </a>
-        <audio id="animalnoises">
-            <source src="http://aroughazure3.azurewebsites.net/content/tiger.mp3" type='audio/mp3'>
-        </audio>
-    </div>
-    <script type="text/javascript">
-        $(function () {
-            $(".playback").click(function (e) {
-                e.preventDefault();
-                // This next line will get the audio element
-                // that is adjacent to the link that was clicked.
-                var song = $(this).next('audio').get(20);
-                if (song.paused)
-                    song.play();
-                else
-                    song.pause();
-            });
-        });
-    </script>
-    <script type="text/javascript">
-        window.addEvent('load', function () {
-            loadResult();
-        });
-    </script>
+            </script>
+        </div>
 
 
-    <!--              <p>Elephant</p>
-            <audio controls>
-                <source src=""
-                        type='audio/mp3'>
-                <p>Your user agent does not support the HTML5 Audio element.</p>
-            </audio>
-            <br />
-            <img src="" width="300" />
-            <p>Lion</p>
-            <audio controls>
-                <source src=""
-                        type='audio/mp3'>
-                <p>Your user agent does not support the HTML5 Audio element.</p>
-            </audio>
-            <br />
-            <img src="" width="300" />
+        <!--cat-->
+        <div id="navbar">cat</div>
+        <div id="content">
+            <div class="thumbnail" id="animalnoises">
+                <a class="playback" href="#">
+                    <img id="play" src="http://aroughazure3.azurewebsites.net/content/cat.jpg" width="300" />
+                </a>
+                <audio id="animalnoises">
+                    <source src="http://aroughazure3.azurewebsites.net/content/cat.mp3" type='audio/mp3'>
+                </audio>
+            </div>
+            <script type="text/javascript">
+            $(function () {
+                $(".playback").click(function (e) {
+                    e.preventDefault();
+                    // This next line will get the audio element
+                    // that is adjacent to the link that was clicked.
+                    var song = $(this).next('audio').get(2);
+                    if (song.paused)
+                        song.play();
+                    else
+                        song.pause();
+                });
+            });
+            </script>
+            <script type="text/javascript">
+            window.addEvent('load', function () {
+                loadResult();
+            });
+            </script>
+        </div>
 
-            -->
+        <!--chickadee-->
+        <div id="navbar">chickadee</div>
+        <div id="content">
+            <div class="thumbnail" id="animalnoises">
+                <a class="playback" href="#">
+                    <img id="play" src="http://aroughazure3.azurewebsites.net/content/chickadee.jpg" width="300" />
+                </a>
+                <audio id="animalnoises">
+                    <source src="http://aroughazure3.azurewebsites.net/content/chickadee.mp3" type='audio/mp3'>
+                </audio>
+            </div>
+            <script type="text/javascript">
+            $(function () {
+                $(".playback").click(function (e) {
+                    e.preventDefault();
+                    // This next line will get the audio element
+                    // that is adjacent to the link that was clicked.
+                    var song = $(this).next('audio').get(3);
+                    if (song.paused)
+                        song.play();
+                    else
+                        song.pause();
+                });
+            });
+            </script>
+            <script type="text/javascript">
+            window.addEvent('load', function () {
+                loadResult();
+            });
+            </script>
+        </div>
+
+
+        <!--crow-->
+        <div id="navbar">crow</div>
+        <div id="content">
+            <div class="thumbnail" id="animalnoises">
+                <a class="playback" href="#">
+                    <img id="play" src="http://aroughazure3.azurewebsites.net/content/crow.jpg" width="300" />
+                </a>
+                <audio id="animalnoises">
+                    <source src="http://aroughazure3.azurewebsites.net/content/crow.mp3" type='audio/mp3'>
+                </audio>
+            </div>
+            <script type="text/javascript">
+            $(function () {
+                $(".playback").click(function (e) {
+                    e.preventDefault();
+                    // This next line will get the audio element
+                    // that is adjacent to the link that was clicked.
+                    var song = $(this).next('audio').get(4);
+                    if (song.paused)
+                        song.play();
+                    else
+                        song.pause();
+                });
+            });
+            </script>
+            <script type="text/javascript">
+            window.addEvent('load', function () {
+                loadResult();
+            });
+            </script>
+        </div>
+
+
+        <!--cuckoo-->
+        <div id="navbar">cuckoo</div>
+        <div id="content">
+            <div class="thumbnail" id="animalnoises">
+                <a class="playback" href="#">
+                    <img id="play" src="http://aroughazure3.azurewebsites.net/content/cuckoo.jpg" width="300" />
+                </a>
+                <audio id="animalnoises">
+                    <source src="http://aroughazure3.azurewebsites.net/content/cuckoo.mp3" type='audio/mp3'>
+                </audio>
+            </div>
+            <script type="text/javascript">
+            $(function () {
+                $(".playback").click(function (e) {
+                    e.preventDefault();
+                    // This next line will get the audio element
+                    // that is adjacent to the link that was clicked.
+                    var song = $(this).next('audio').get(5);
+                    if (song.paused)
+                        song.play();
+                    else
+                        song.pause();
+                });
+            });
+            </script>
+            <script type="text/javascript">
+            window.addEvent('load', function () {
+                loadResult();
+            });
+            </script>
+        </div>
+
+
+        <!--donkey-->
+        <div id="navbar">donkey</div>
+        <div id="content">
+            <div class="thumbnail" id="animalnoises">
+                <a class="playback" href="#">
+                    <img id="play" src="http://aroughazure3.azurewebsites.net/content/donkey.jpg" width="300" />
+                </a>
+                <audio id="animalnoises">
+                    <source src="http://aroughazure3.azurewebsites.net/content/donkey.mp3" type='audio/mp3'>
+                </audio>
+            </div>
+            <script type="text/javascript">
+            $(function () {
+                $(".playback").click(function (e) {
+                    e.preventDefault();
+                    // This next line will get the audio element
+                    // that is adjacent to the link that was clicked.
+                    var song = $(this).next('audio').get(6);
+                    if (song.paused)
+                        song.play();
+                    else
+                        song.pause();
+                });
+            });
+            </script>
+            <script type="text/javascript">
+            window.addEvent('load', function () {
+                loadResult();
+            });
+            </script>
+        </div>
+
+
+        <!--goat-->
+        <div id="navbar">goat</div>
+        <div id="content">
+            <div class="thumbnail" id="animalnoises">
+                <a class="playback" href="#">
+                    <img id="play" src="http://aroughazure3.azurewebsites.net/content/goat.jpg" width="300" />
+                </a>
+                <audio id="animalnoises">
+                    <source src="http://aroughazure3.azurewebsites.net/content/goat.mp3" type='audio/mp3'>
+                </audio>
+            </div>
+            <script type="text/javascript">
+            $(function () {
+                $(".playback").click(function (e) {
+                    e.preventDefault();
+                    // This next line will get the audio element
+                    // that is adjacent to the link that was clicked.
+                    var song = $(this).next('audio').get(7);
+                    if (song.paused)
+                        song.play();
+                    else
+                        song.pause();
+                });
+            });
+            </script>
+            <script type="text/javascript">
+            window.addEvent('load', function () {
+                loadResult();
+            });
+            </script>
+        </div>
+
+
+        <!--panda-->
+        <div id="navbar">panda</div>
+        <div id="content">
+            <div class="thumbnail" id="animalnoises">
+                <a class="playback" href="#">
+                    <img id="play" src="http://aroughazure3.azurewebsites.net/content/panda.jpg" width="300" />
+                </a>
+                <audio id="animalnoises">
+                    <source src="http://aroughazure3.azurewebsites.net/content/panda.mp3" type='audio/mp3'>
+                </audio>
+            </div>
+            <script type="text/javascript">
+            $(function () {
+                $(".playback").click(function (e) {
+                    e.preventDefault();
+                    // This next line will get the audio element
+                    // that is adjacent to the link that was clicked.
+                    var song = $(this).next('audio').get(8);
+                    if (song.paused)
+                        song.play();
+                    else
+                        song.pause();
+                });
+            });
+            </script>
+            <script type="text/javascript">
+            window.addEvent('load', function () {
+                loadResult();
+            });
+            </script>
+        </div>
+
+
+        <!--peacock-->
+        <div id="navbar">peacock</div>
+        <div id="content">
+            <div class="thumbnail" id="animalnoises">
+                <a class="playback" href="#">
+                    <img id="play" src="http://aroughazure3.azurewebsites.net/content/peacock.jpg" width="300" />
+                </a>
+                <audio id="animalnoises">
+                    <source src="http://aroughazure3.azurewebsites.net/content/peacock.mp3" type='audio/mp3'>
+                </audio>
+            </div>
+            <script type="text/javascript">
+            $(function () {
+                $(".playback").click(function (e) {
+                    e.preventDefault();
+                    // This next line will get the audio element
+                    // that is adjacent to the link that was clicked.
+                    var song = $(this).next('audio').get(9);
+                    if (song.paused)
+                        song.play();
+                    else
+                        song.pause();
+                });
+            });
+            </script>
+            <script type="text/javascript">
+            window.addEvent('load', function () {
+                loadResult();
+            });
+            </script>
+        </div>
+
+
+        <!--pig-->
+        <div id="navbar">pig</div>
+        <div id="content">
+            <div class="thumbnail" id="animalnoises">
+                <a class="playback" href="#">
+                    <img id="play" src="http://aroughazure3.azurewebsites.net/content/pig.jpg" width="300" />
+                </a>
+                <audio id="animalnoises">
+                    <source src="http://aroughazure3.azurewebsites.net/content/pig.mp3" type='audio/mp3'>
+                </audio>
+            </div>
+            <script type="text/javascript">
+            $(function () {
+                $(".playback").click(function (e) {
+                    e.preventDefault();
+                    // This next line will get the audio element
+                    // that is adjacent to the link that was clicked.
+                    var song = $(this).next('audio').get(10);
+                    if (song.paused)
+                        song.play();
+                    else
+                        song.pause();
+                });
+            });
+            </script>
+            <script type="text/javascript">
+            window.addEvent('load', function () {
+                loadResult();
+            });
+            </script>
+        </div>
+
+
+        <!--puffin-->
+        <div id="navbar">puffin</div>
+        <div id="content">
+            <div class="thumbnail" id="animalnoises">
+                <a class="playback" href="#">
+                    <img id="play" src="http://aroughazure3.azurewebsites.net/content/puffin.jpg" width="300" />
+                </a>
+                <audio id="animalnoises">
+                    <source src="http://aroughazure3.azurewebsites.net/content/puffin.mp3" type='audio/mp3'>
+                </audio>
+            </div>
+            <script type="text/javascript">
+            $(function () {
+                $(".playback").click(function (e) {
+                    e.preventDefault();
+                    // This next line will get the audio element
+                    // that is adjacent to the link that was clicked.
+                    var song = $(this).next('audio').get(11);
+                    if (song.paused)
+                        song.play();
+                    else
+                        song.pause();
+                });
+            });
+            </script>
+            <script type="text/javascript">
+            window.addEvent('load', function () {
+                loadResult();
+            });
+            </script>
+        </div>
+
+
+        <!--rattlesnake-->
+        <div id="navbar">snake</div>
+        <div id="content">
+            <div class="thumbnail" id="animalnoises">
+                <a class="playback" href="#">
+                    <img id="play" src="http://aroughazure3.azurewebsites.net/content/rattlesnake.jpg" width="300" />
+                </a>
+                <audio id="animalnoises">
+                    <source src="http://aroughazure3.azurewebsites.net/content/rattlesnake.mp3" type='audio/mp3'>
+                </audio>
+            </div>
+            <script type="text/javascript">
+            $(function () {
+                $(".playback").click(function (e) {
+                    e.preventDefault();
+                    // This next line will get the audio element
+                    // that is adjacent to the link that was clicked.
+                    var song = $(this).next('audio').get(12);
+                    if (song.paused)
+                        song.play();
+                    else
+                        song.pause();
+                });
+            });
+            </script>
+            <script type="text/javascript">
+            window.addEvent('load', function () {
+                loadResult();
+            });
+            </script>
+        </div>
+
+
+        <!--turkey-->
+        <div id="navbar">turkey</div>
+        <div id="content">
+            <div class="thumbnail" id="animalnoises">
+                <a class="playback" href="#">
+                    <img id="play" src="http://aroughazure3.azurewebsites.net/content/turkey.jpg" width="300" />
+                </a>
+                <audio id="animalnoises">
+                    <source src="http://aroughazure3.azurewebsites.net/content/turkey.mp3" type='audio/mp3'>
+                </audio>
+            </div>
+            <script type="text/javascript">
+            $(function () {
+                $(".playback").click(function (e) {
+                    e.preventDefault();
+                    // This next line will get the audio element
+                    // that is adjacent to the link that was clicked.
+                    var song = $(this).next('audio').get(13);
+                    if (song.paused)
+                        song.play();
+                    else
+                        song.pause();
+                });
+            });
+            </script>
+            <script type="text/javascript">
+            window.addEvent('load', function () {
+                loadResult();
+            });
+            </script>
+        </div>
+
+
+        <!--monkey -->
+        <div id="navbar">monkey</div>
+        <div id="content">
+            <div class="thumbnail" id="animalnoises">
+                <a class="playback" href="#">
+                    <img id="play" src="http://aroughazure3.azurewebsites.net/content/monkey.jpg" width="300" />
+                </a>
+                <audio id="animalnoises">
+                    <source src="http://aroughazure3.azurewebsites.net/content/77689__marcoo__monkeys-miami-zoomov06764-mpg.mp3" type='audio/mp3'>
+                </audio>
+            </div>
+            <script type="text/javascript">
+            $(function () {
+                $(".playback").click(function (e) {
+                    e.preventDefault();
+                    // This next line will get the audio element
+                    // that is adjacent to the link that was clicked.
+                    var song = $(this).next('audio').get(14);
+                    if (song.paused)
+                        song.play();
+                    else
+                        song.pause();
+                });
+            });
+            </script>
+            <script type="text/javascript">
+            window.addEvent('load', function () {
+                loadResult();
+            });
+            </script>
+        </div>
+
+
+        <!--cow -->
+        <div id="navbar">cow</div>
+        <div id="content">
+            <div class="thumbnail" id="animalnoises">
+                <a class="playback" href="#">
+                    <img id="play" src="http://aroughazure3.azurewebsites.net/content/cow.jpg" width="300" />
+                </a>
+                <audio id="animalnoises">
+                    <source src="http://aroughazure3.azurewebsites.net/content/103425__confusion-music__bull-3-b.mp3" type='audio/mp3'>
+                </audio>
+            </div>
+            <script type="text/javascript">
+            $(function () {
+                $(".playback").click(function (e) {
+                    e.preventDefault();
+                    // This next line will get the audio element
+                    // that is adjacent to the link that was clicked.
+                    var song = $(this).next('audio').get(15);
+                    if (song.paused)
+                        song.play();
+                    else
+                        song.pause();
+                });
+            });
+            </script>
+            <script type="text/javascript">
+            window.addEvent('load', function () {
+                loadResult();
+            });
+            </script>
+        </div>
+
+
+        <!--rooster -->
+        <div id="navbar">rooster</div>
+        <div id="content">
+            <div class="thumbnail" id="animalnoises">
+                <a class="playback" href="#">
+                    <img id="play" src="http://aroughazure3.azurewebsites.net/content/rooster.jpg" width="300" />
+                </a>
+                <audio id="animalnoises">
+                    <source src="http://aroughazure3.azurewebsites.net/content/43382__agfx__rooster-chicken-calls-2.mp3" type='audio/mp3'>
+                </audio>
+            </div>
+            <script type="text/javascript">
+            $(function () {
+                $(".playback").click(function (e) {
+                    e.preventDefault();
+                    // This next line will get the audio element
+                    // that is adjacent to the link that was clicked.
+                    var song = $(this).next('audio').get(16);
+                    if (song.paused)
+                        song.play();
+                    else
+                        song.pause();
+                });
+            });
+            </script>
+            <script type="text/javascript">
+            window.addEvent('load', function () {
+                loadResult();
+            });
+            </script>
+        </div>
+
+
+        <!--duck -->
+        <div id="navbar">duck</div>
+        <div id="content">
+            <div class="thumbnail" id="animalnoises2">
+                <a class="playback" href="#">
+                    <img id="play" src="http://aroughazure3.azurewebsites.net/content/duck.jpg" width="300" />
+                </a>
+                <audio id="animalnoises">
+                    <source src="http://aroughazure3.azurewebsites.net/content/duck.mp3" type='audio/mp3'>
+                </audio>
+            </div>
+            <script type="text/javascript">
+            $(function () {
+                $(".playback").click(function (e) {
+                    e.preventDefault();
+                    // This next line will get the audio element
+                    // that is adjacent to the link that was clicked.
+                    var song = $(this).next('audio').get(17);
+                    if (song.paused)
+                        song.play();
+                    else
+                        song.pause();
+                });
+            });
+            </script>
+            <script type="text/javascript">
+            window.addEvent('load', function () {
+                loadResult();
+            });
+            </script>
+        </div>
+
+
+        <!--bear -->
+        <div id="navbar">bear</div>
+        <div id="contain">
+            <div class="thumbnail" id="animalnoises2">
+                <a class="playback" href="#">
+                    <img id="play" src="http://aroughazure3.azurewebsites.net/content/polarbear.jpg" width="300" />
+                </a>
+                <audio id="animalnoises">
+                    <source src="http://aroughazure3.azurewebsites.net/content/70333__mrbubble110__bear-roar.mp3" type='audio/mp3'>
+                </audio>
+            </div>
+            <script type="text/javascript">
+            $(function () {
+                $(".playback").click(function (e) {
+                    e.preventDefault();
+                    // This next line will get the audio element
+                    // that is adjacent to the link that was clicked.
+                    var song = $(this).next('audio').get(18);
+                    if (song.paused)
+                        song.play();
+                    else
+                        song.pause();
+                });
+            });
+            </script>
+            <script type="text/javascript">
+            window.addEvent('load', function () {
+                loadResult();
+            });
+            </script>
+        </div>
+
+
+        <!--elephant -->
+        <div id="navbar">elephant</div>
+        <div id="content">
+            <div class="thumbnail" id="animalnoises2">
+                <a class="playback" href="#">
+                    <img id="play" src="http://aroughazure3.azurewebsites.net/content/elephant.jpg" width="300" />
+                </a>
+                <audio id="animalnoises">
+                    <source src="http://aroughazure3.azurewebsites.net/content/148873__vataaa__voice-elephant.mp3" type='audio/mp3'>
+                </audio>
+            </div>
+            <script type="text/javascript">
+            $(function () {
+                $(".playback").click(function (e) {
+                    e.preventDefault();
+                    // This next line will get the audio element
+                    // that is adjacent to the link that was clicked.
+                    var song = $(this).next('audio').get(19);
+                    if (song.paused)
+                        song.play();
+                    else
+                        song.pause();
+                });
+            });
+            </script>
+            <script type="text/javascript">
+            window.addEvent('load', function () {
+                loadResult();
+            });
+            </script>
+        </div>
+
+
+        <!--LION -->
+        <div id="navbar">lion</div>
+        <div id="content">
+            <div class="thumbnail" id="animalnoises2">
+                <a class="playback" href="#">
+                    <img id="play" src="http://aroughazure3.azurewebsites.net/content/Lion.jpg" width="300" />
+                </a>
+                <audio id="animalnoises">
+                    <source src="http://aroughazure3.azurewebsites.net/content/tiger.mp3" type='audio/mp3'>
+                </audio>
+            </div>
+            <script type="text/javascript">
+            $(function () {
+                $(".playback").click(function (e) {
+                    e.preventDefault();
+                    // This next line will get the audio element
+                    // that is adjacent to the link that was clicked.
+                    var song = $(this).next('audio').get(20);
+                    if (song.paused)
+                        song.play();
+                    else
+                        song.pause();
+                });
+            });
+            </script>
+            <script type="text/javascript">
+            window.addEvent('load', function () {
+                loadResult();
+            });
+            </script>
+        </div>
+    </div>
+
 </body>
 </html>
-
