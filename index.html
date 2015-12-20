@@ -26,6 +26,37 @@
 </head>
 <body>
     <div id="layout">
+        <!--llama-->
+        <div id="navbar">llama</div>
+        <div id="content">
+            <div class="thumbnail" id="animalnoises">
+                <a class="playback" href="#">
+                    <img id="play" src="http://aroughazure3.azurewebsites.net/content/llama.jpg" width="300" />
+                </a>
+                <audio id="animalnoises">
+                    <source src="http://aroughazure3.azurewebsites.net/content/llama.mp3" type='audio/mp3'>
+                </audio>
+            </div>
+            <script type="text/javascript">
+                $(function () {
+                    $(".playback").click(function (e) {
+                        e.preventDefault();
+                        // This next line will get the audio element
+                        // that is adjacent to the link that was clicked.
+                        var song = $(this).next('audio').get(0);
+                        if (song.paused)
+                            song.play();
+                        else
+                            song.pause();
+                    });
+                });
+            </script>
+            <script type="text/javascript">
+                window.addEvent('load', function () {
+                    loadResult();
+                });
+            </script>
+        </div>
         <!--frog-->
         <div id="navbar">frog</div>
         <div id="content">
