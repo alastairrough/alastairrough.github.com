@@ -2,7 +2,6 @@
 45 9 * * * nodejs /home/alastair/source/runtime.secure/scrape305.js && sh /home/alastair/source/alastairrough.github.com/git2.sh
 55 11 * * * nodejs /home/alastair/source/runtime.secure/scrape305.js && sh /home/alastair/source/alastairrough.github.com/git2.sh
 10 14 * * * nodejs /home/alastair/source/runtime.secure/scrape305.js && sh /home/alastair/source/alastairrough.github.com/git2.sh
-40 14 * * * nodejs /home/alastair/source/runtime.secure/scrape305.js && sh /home/alastair/source/alastairrough.github.com/git2.sh
 20 16 * * * nodejs /home/alastair/source/runtime.secure/scrape305.js && sh /home/alastair/source/alastairrough.github.com/git2.sh
 30 17 * * * nodejs /home/alastair/source/runtime.secure/scrape305.js && sh /home/alastair/source/alastairrough.github.com/git2.sh
 50 19 * * * nodejs /home/alastair/source/runtime.secure/scrape305.js && sh /home/alastair/source/alastairrough.github.com/git2.sh
@@ -12,7 +11,6 @@
 50 10 * * * nodejs /home/alastair/source/runtime.secure/scrape305.js && sh /home/alastair/source/alastairrough.github.com/git2.sh
 05 13 * * * nodejs /home/alastair/source/runtime.secure/scrape305.js && sh /home/alastair/source/alastairrough.github.com/git2.sh
 15 15 * * * nodejs /home/alastair/source/runtime.secure/scrape305.js && sh /home/alastair/source/alastairrough.github.com/git2.sh
-50 15 * * * nodejs /home/alastair/source/runtime.secure/scrape305.js && sh /home/alastair/source/alastairrough.github.com/git2.sh
 25 17 * * * nodejs /home/alastair/source/runtime.secure/scrape305.js && sh /home/alastair/source/alastairrough.github.com/git2.sh
 40 18 * * * nodejs /home/alastair/source/runtime.secure/scrape305.js && sh /home/alastair/source/alastairrough.github.com/git2.sh
 55 20 * * * nodejs /home/alastair/source/runtime.secure/scrape305.js && sh /home/alastair/source/alastairrough.github.com/git2.sh
