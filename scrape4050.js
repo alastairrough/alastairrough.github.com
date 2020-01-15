@@ -6,7 +6,7 @@ var hour;
 var minute;
 var AMPM;
 
-//request("http://localhost/schedule_data.html", function(error, response, body) {
+// request("http://localhost/test_cron1.html", function(error, response, body) {
 request("http://orca.bcferries.com:8080/cc/marqui/arrivals-departures.asp?dept=HSB&route=03", function(error, response, body) {
     if (error) {
         console.log("Error: " + error);
@@ -38,7 +38,7 @@ request("http://orca.bcferries.com:8080/cc/marqui/arrivals-departures.asp?dept=H
                 }
             }
             //    console.log(minute, hour, "* * * nodejs /home/alastair/source/runtime.secure/scrape305.js && sh /home/alastair/source/alastairrough.github.com/git2.sh && sh /home/alastair/source/alastairrough.github.com/alexa/skill-sample-ferry/ferryfact5rpi81.sh");
-            console.log(minute, hour, "* * * nodejs /home/alastair/source/runtime.secure/scrape305.js && sh /home/alastair/source/alastairrough.github.com/git2.sh");
+            console.log(minute, hour, "* * * sleep 15m && nodejs /home/alastair/source/ferry_alerts/scrape5075.js && nodejs /home/alastair/source/ferry_alerts/scrape5077.js");
             // 2300
             // create daily a new crontab from the next day's sailing schedule
             // then pipe to awk and crontab
