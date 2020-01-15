@@ -4,6 +4,9 @@
 # Google plots
 dist/
 
+# test files
+tests/
+
 # User-specific files
 *.suo
 *.user
