@@ -1,7 +1,7 @@
 MAILTO=rough.alastair@gmail.com
 
 # email IP address on boot
-@reboot sudo sh /home/alastair/source/Linux-shell-scripts/address.sh | mailx -s "address on boot" rough.alastair@gmail.com
+@reboot sudo sh /home/alastair/source/Linux-shell-scripts/address.sh | mailx -s "address on boot $HOSTNAME" rough.alastair@gmail.com
 
 # nmap
 0 6 * * * sh /home/alastair/source/nmap/nmap.sh
