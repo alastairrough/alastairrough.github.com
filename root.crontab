@@ -1,12 +1,2 @@
-30 7 * * * nodejs /home/alastair/source/runtime.secure/scrape305.js && sh /home/alastair/source/alastairrough.github.com/git2.sh
-45 9 * * * nodejs /home/alastair/source/runtime.secure/scrape305.js && sh /home/alastair/source/alastairrough.github.com/git2.sh
-55 11 * * * nodejs /home/alastair/source/runtime.secure/scrape305.js && sh /home/alastair/source/alastairrough.github.com/git2.sh
-20 16 * * * nodejs /home/alastair/source/runtime.secure/scrape305.js && sh /home/alastair/source/alastairrough.github.com/git2.sh
-35 18 * * * nodejs /home/alastair/source/runtime.secure/scrape305.js && sh /home/alastair/source/alastairrough.github.com/git2.sh
-45 20 * * * nodejs /home/alastair/source/runtime.secure/scrape305.js && sh /home/alastair/source/alastairrough.github.com/git2.sh
-20 6 * * * nodejs /home/alastair/source/runtime.secure/scrape305.js && sh /home/alastair/source/alastairrough.github.com/git2.sh
-40 8 * * * nodejs /home/alastair/source/runtime.secure/scrape305.js && sh /home/alastair/source/alastairrough.github.com/git2.sh
-50 10 * * * nodejs /home/alastair/source/runtime.secure/scrape305.js && sh /home/alastair/source/alastairrough.github.com/git2.sh
-15 15 * * * nodejs /home/alastair/source/runtime.secure/scrape305.js && sh /home/alastair/source/alastairrough.github.com/git2.sh
-25 17 * * * nodejs /home/alastair/source/runtime.secure/scrape305.js && sh /home/alastair/source/alastairrough.github.com/git2.sh
-40 19 * * * nodejs /home/alastair/source/runtime.secure/scrape305.js && sh /home/alastair/source/alastairrough.github.com/git2.sh
+Error: Error: unable to verify the first certificate
+Body empty

@@ -23,7 +23,6 @@
 </head>
 
 <body>
-<!--
     <p>
         <img width="700px" src="https://orca.bcferries.com/cc/settings/includes/maps/route4.jpg" />
     </p>
@@ -41,7 +40,6 @@
     <br />
     <iframe id="ifr_pivot" width="1000px" height="700px" scrolling="auto" allowtransparency="true" src="https://alastairrough.github.io/pivot.html"></iframe>
     <br />
--->
     <p style="font-family:verdana;font-size:11px">
         <a href="https://www.bcferries.com/current_conditions/allroutes-status.html">All Routes Status</a>
     </p>
@@ -54,7 +52,6 @@
     <p style="font-family:verdana;font-size:11px">
         <a href="http://www.bcferries.com/bcftravelcentre">Make a Reservation</a>&nbsp;
     </p>
-<!--
     <p style="font-family:verdana;font-size:11px">
         <a href="https://alastairrough.github.io/departurebay.html">Departure Bay to Horseshoe Bay</a>&nbsp;
     </p>
@@ -67,7 +64,6 @@
     <p style="font-family:verdana;font-size:11px">
         <a href="https://s3.amazonaws.com/bcferries.applocation.net/routemaps/route29.jpg">Egmont to Saltery Bay</a>&nbsp;
     </p>
--->
     <p style="font-family:verdana;font-size:11px">
         <a href="https://alastairrough.github.io/webcams.html">Webcams on Sunshine Coast from Drive BC</a>&nbsp;
     </p>
