@@ -1,6 +1,9 @@
-alastairrough.github.com  
-========================
-Outline function:
+BC Ferries traffic data 
+=======================
+
+From Sep 24, 2020 this code is no longer oompatible with the public website bcferries.com
+
+Former outline function:
 1. Mash-up from the ferry site is at http://alastairrough.github.io/sunshine.html. My pivot table of load % in an iframe at the foot of the page. 
 2. Working repo https://github.com/alastairrough/alastairrough.github.com. 
 3. The web site scraper is https://github.com/alastairrough/alastairrough.github.com/blob/master/scrape305.js written for node.js.
