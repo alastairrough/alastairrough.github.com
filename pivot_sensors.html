@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-
+ 
 <head>
     <meta charset="utf-8" />
     <title>Pivot Demo</title>
@@ -42,19 +42,19 @@
             var derivers = $.pivotUtilities.derivers;
             var renderers = $.extend($.pivotUtilities.renderers,
                 $.pivotUtilities.gchart_renderers);
-            $.getJSON("output/Jan2.json", function(mps) {
+            $.getJSON("./sensorData03.json", function(mps) {
                 $("#output").pivotUI(mps, {
                     "derivedAttributes": {},
                     "hiddenAttributes": [],
                     "menuLimit": 500,
                     "cols": [
-                        "sailingTime"
+                        "idsensors"
                     ],
                     "rows": [
-                        "Departing"
+                        "id"
                     ],
                     "vals": [
-                        "totalLoad"
+                        "temperature"
                     ],
                     "exclusions": {},
                     "inclusions": {},
